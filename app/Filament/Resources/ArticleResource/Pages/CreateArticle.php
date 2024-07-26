@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Filament\Resources\CategoryResource\Pages;
+namespace App\Filament\Resources\ArticleResource\Pages;
 
-use App\Filament\Resources\CategoryResource;
+use App\Filament\Resources\ArticleResource;
 use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 use Filament\Notifications\Notification;
 
-class CreateCategory extends CreateRecord
+class CreateArticle extends CreateRecord
 {
-    protected static string $resource = CategoryResource::class;
+    protected static string $resource = ArticleResource::class;
 
     protected function getRedirectUrl(): string
     {
@@ -19,9 +19,7 @@ class CreateCategory extends CreateRecord
     protected function getSavedNotification(): ?Notification{
         return Notification::make()
         ->success()
-        ->title('Category Created')
-        ->body('Category created successfully.');
+        ->title('Article Created')
+        ->body('Article created successfully.');
     }
-
-
 }
