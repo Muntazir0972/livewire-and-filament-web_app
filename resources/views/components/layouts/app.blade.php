@@ -47,7 +47,7 @@
 					<li class="nav-item "> <a wire:navigate class="nav-link" href="{{ route('servicesPage') }}">Services</a></li>
 					<li class="nav-item "> <a class="nav-link" wire:navigate href="{{ route('teamPage') }}">Our Team</a></li>
 					<li class="nav-item "><a class="nav-link " wire:navigate href="{{ route('blog') }}">Blog</a></li>
-					<li class="nav-item "><a class="nav-link " href="faq.html">FAQ</a></li>
+					<li class="nav-item "><a class="nav-link " wire:navigate href="{{ route('faqs') }}">FAQ</a></li>
 				</ul>
 				<a href="#!" class="btn btn-outline-primary">Contact Us</a>				
 			</div>

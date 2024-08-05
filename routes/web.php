@@ -2,6 +2,7 @@
 
 use App\Livewire\BlogDetail;
 use App\Livewire\ShowBlog;
+use App\Livewire\ShowFaqPage;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\ShowHome;
 use App\Livewire\ShowService;
@@ -19,3 +20,4 @@ Route::get('/service/{id}', ShowService::class)->name('servicePage');
 Route::get('/team', ShowTeamPage::class)->name('teamPage');
 Route::get('/blog', ShowBlog::class)->name('blog');
 Route::get('/blog/{id}', BlogDetail::class)->name('blogDetail');
+Route::get('/faqs', ShowFaqPage::class)->name('faqs');

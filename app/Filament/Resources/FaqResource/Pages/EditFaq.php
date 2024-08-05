@@ -28,7 +28,7 @@ class EditFaq extends EditRecord
     {
         return Notification::make()
             ->success()
-            ->title('FAQ  Updated')
+            ->title('FAQ Updated')
             ->body('FAQ updated successfully.');
     }
 }
